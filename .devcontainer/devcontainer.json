@@ -1,0 +1,22 @@
+{
+    "name": "Terraform + Google Cloud DevContainer",
+    "build": {
+        "dockerfile": "Dockerfile",
+        "context": "."
+    },
+    "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash"
+    },
+    "features": {},
+    "postCreateCommand": "terraform --version && gcloud --version",
+    "remoteUser": "vscode",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "hashicorp.terraform",
+                "ms-vscode.remote-containers",
+                "ms-azuretools.vscode-docker"
+            ]
+        }
+    }
+}
