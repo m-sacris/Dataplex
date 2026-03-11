@@ -3,7 +3,7 @@ resource "google_dataplex_datascan" "basic_profile" {
   data_scan_id = "dataprofile-basic"
 
   data {
-      resource = "//bigquery.googleapis.com/projects/bigquery-public-data/datasets/samples/tables/shakespeare"
+    resource = "//bigquery.googleapis.com/projects/bigquery-public-data/datasets/samples/tables/shakespeare"
   }
 
   execution_spec {
@@ -12,7 +12,7 @@ resource "google_dataplex_datascan" "basic_profile" {
     }
   }
 
-data_profile_spec {}
+  data_profile_spec {}
 
   project = var.project
 }

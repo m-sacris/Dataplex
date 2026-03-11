@@ -1,7 +1,7 @@
 variable "project" {
   description = "The GCP project ID"
   type        = string
-  default = "nttdataDataplex"
+  default     = "nttdataDataplex"
 }
 
 variable "location" {
@@ -9,4 +9,3 @@ variable "location" {
   type        = string
   default     = "europe-west1"
 }
-

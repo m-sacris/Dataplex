@@ -1,7 +1,7 @@
 variable "project" {
   description = "The GCP project ID"
   type        = string
-  default = "nttdataDataplex"
+  default     = "nttdataDataplex"
 }
 
 variable "location" {
@@ -32,6 +32,11 @@ variable "bucket_name" {
   description = "The name of the GCS bucket"
   type        = string
   default     = "bucket"
+}
+
+variable "project_number" {
+  description = "The GCP project number"
+  type        = string
 }
 
 variable "asset_labels" {
