@@ -1,3 +1,4 @@
+```bash
 # 1. Initialize Terraform (downloads the Google provider and registers the module)
 terraform init
 
@@ -9,3 +10,4 @@ terraform fmt -recursive
 
 # 4. Preview the execution plan without connecting to Google Cloud
 terraform plan -refresh=false
+```
